@@ -107,7 +107,7 @@ class Handler
         } elseif (array_key_exists($statusCode, $this->exceptionsByStatusCode)) {
             $class = $this->exceptionsByStatusCode[$statusCode];
         } else {
-            $class = 'Connectus';
+            $class = 'ConnectusApi';
         }
 
         $class = "\\Jlorente\\Connectus\\Exception\\{$class}Exception";
