@@ -149,7 +149,7 @@ abstract class Api implements ApiInterface
         if (strtoupper($httpMethod) === 'GET') {
             $prepared['query'] = $parameters;
         } else {
-            $prepared['form_params'] = $parameters;
+            $prepared['json'] = $parameters;
         }
 
         return $prepared;
